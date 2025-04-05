@@ -9,7 +9,7 @@ This is a RESTful API for managing and retrieving inspirational wisdom nuggets. 
 - **Backend Language**: Node.js
 - **Framework**: Express.js
 - **Database**: MySQL (via XAMPP)
-- **Hosting**: (Locally or via platforms like Railway/Render for backend)
+
 
 ---
 
