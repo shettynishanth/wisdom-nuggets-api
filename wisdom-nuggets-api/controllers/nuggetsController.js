@@ -1,6 +1,6 @@
-const db = require('../db'); // Import the database connection
+const db = require('../db'); // database connection
 
-// GET /nuggets - Retrieve all wisdom nuggets
+// GET /nuggets 
 exports.getAllNuggets = async (req, res) => {
   try {
     const [rows] = await db.execute('SELECT * FROM nuggets');
@@ -11,7 +11,7 @@ exports.getAllNuggets = async (req, res) => {
   }
 };
 
-// GET /nuggets/random - Retrieve a random wisdom nugget
+// GET /nuggets/random 
 exports.getRandomNugget = async (req, res) => {
   try {
     const [rows] = await db.execute('SELECT * FROM nuggets');
@@ -26,7 +26,7 @@ exports.getRandomNugget = async (req, res) => {
   }
 };
 
-// POST /nuggets - Add a new wisdom nugget
+// POST /nuggets 
 exports.addNugget = async (req, res) => {
   const { text, author } = req.body;
   if (!text || !author) {
@@ -45,7 +45,7 @@ exports.addNugget = async (req, res) => {
   }
 };
 
-// DELETE /nuggets/:id - Delete a nugget by ID
+// DELETE /nuggets/:id 
 exports.deleteNugget = async (req, res) => {
   const id = req.params.id;
   try {
