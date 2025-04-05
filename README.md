@@ -66,13 +66,24 @@ Database Schema
     author VARCHAR(255) NOT NULL
     );
 
-** API Endpoints
-Method	Endpoint	Description
-GET	/nuggets	Get all wisdom nuggets
-GET	/nuggets/random	Get a random wisdom nugget
-POST	/nuggets	Add a new wisdom nugget
+## API Endpoints — Usage Examples
 
+Get All Nuggets
+      ```bash
+   
+      curl http://localhost:3000/nuggets
+Get a Random Nugget
+      ```bash
 
-
+      curl http://localhost:3000/nuggets/random
+      
+Add a New Nugget
+   ```bash
+      curl -X POST http://localhost:3000/nuggets \
+      -H "Content-Type: application/json" \
+      -d '{
+      "text": "Success is not final, failure is not fatal: It is the courage to continue that counts.",
+      "author": "Winston Churchill"
+         }'
 
 
