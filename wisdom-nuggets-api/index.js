@@ -1,7 +1,7 @@
-require('dotenv').config(); // Load environment variables from .env
+require('dotenv').config(); 
 
 const express = require('express');
-const cors = require('cors'); // Import CORS middleware
+const cors = require('cors'); 
 
 const app = express();
 const nuggetsRoutes = require('./routes/nuggets');
@@ -9,7 +9,7 @@ const nuggetsRoutes = require('./routes/nuggets');
 const PORT = process.env.PORT || 3000;
 
 // Middleware
-app.use(cors()); // Enable CORS for all origins
+app.use(cors()); 
 app.use(express.json());
 
 // Routes
