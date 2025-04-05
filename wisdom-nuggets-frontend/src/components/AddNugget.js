@@ -71,8 +71,7 @@ const AddNugget = () => {
         onClick={handleAddNugget}
         style={{
           padding: '8px 16px',
-        //   backgroundColor: '#007bff',
-        //   color: '#ffff',
+       
           border: 'none',
           borderRadius: '4px',
           cursor: 'pointer',
